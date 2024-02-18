@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Header  from './components/Header';
+import SobreMim from './components/Sobre-mim';
+import JornadaProfissional from './components/Jornada-Profissional';
+import Habilidades from './components/Habilidades';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <body>
+      <header>
+        <Header></Header>
       </header>
-    </div>
+
+      <main>
+      <section class="main-content">
+        <article class="text">
+        <h2>Sobre mim</h2>
+          <SobreMim></SobreMim>
+        <h2>Jornada Profissional</h2>
+          <JornadaProfissional></JornadaProfissional>
+        <h2>Habilidades e Tecnologias</h2> 
+          <Habilidades></Habilidades>
+        </article>
+      </section>
+      </main>
+    </body>
   );
 }
 
