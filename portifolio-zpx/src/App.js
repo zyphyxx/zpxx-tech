@@ -5,6 +5,7 @@ import JornadaProfissional from './components/Jornada-Profissional';
 import Habilidades from './components/Habilidades';
 import Objetivos from './components/Objetivos';
 import Projetos from './components/Projetos';
+import { DADOS } from './components/data.js';
 
 
 function App() {
@@ -24,8 +25,7 @@ function App() {
           <Objetivos></Objetivos>
           <h2>Projetos Destacados</h2>
           <div class='bac'>
-          <Projetos nomeProjeto='Decodificador de Texto - Alura Challenges Oracle ONE' 
-          descricao='Aplicação que criptografa textos, assim você poderá trocar mensagens secretas com outras pessoas que saibam o segredo da criptografia utilizada.'></Projetos>
+          <Projetos {...DADOS[0]} ></Projetos>
           </div>
           
         </article>
