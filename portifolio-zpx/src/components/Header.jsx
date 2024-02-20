@@ -1,7 +1,7 @@
-export default function Header() {
+export default function Header(props) {
   return(
     <div>
-      <h1>Dev.EDGAR</h1>
+      <h1>Dev.{props.nome}</h1>
     </div>
     
   )

@@ -139,3 +139,13 @@ strong {
   transform: scale(1.2);
   box-shadow: 0px 0px 8px #00e0ff;
 }
+
+h2 {
+  cursor: pointer;
+}
+
+.bac {
+  border: solid white 2px;
+  padding: 1%;
+
+}
